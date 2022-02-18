@@ -25,7 +25,7 @@ app.use(cors());
 const serverPortLocal = 3001;
 const PORT = process.env.PORT;
 
-app.get('/', (req, res) => {res.send('Succsess') })
+app.get('/', (req, res) => {res.send('My backend server is working! Yee') })
 app.post('/signin', (req, res) => { handleSignin(req, res, db, bcrypt) })
 app.post('/register', (req, res) => { handleRegister(req, res, db, bcrypt) })
 app.get('/profile/:id', (req, res) => { handleProfileGet(req, res, db) })
